@@ -471,3 +471,57 @@ footer div {
     height: 20px;
   }
 }
+
+@media (min-width: 1440px) {
+  /* Targeting large screens */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header img {
+    margin: 0 auto; /* Centering the image */
+    max-width: 100%;
+    height: auto;
+  }
+
+  .header ul {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .header ul li {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+  /* Navbar */
+  #nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #nav-menu li {
+    margin: 0 20px;
+  }
+
+  #nav-icons {
+    display: none;
+  }
+
+  /* Section "Welcome to your new digital HQ" */
+  main > section:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .button-purple {
+    margin: 0.5em;
+  }
+}
